@@ -70,9 +70,8 @@ div.navbar_profile {
 img.navbar_profile {
     height: 2rem;
     width: 2rem;
-    background-color: white;
+    background-color: transparent;
     border-radius: 100px;
-    padding: 1px;
 }
 
 p.navbar_profile {
