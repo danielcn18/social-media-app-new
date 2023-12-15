@@ -1,0 +1,82 @@
+.navbar_main {
+    width: 100%;
+    min-height: 3.25rem;
+    height: auto;
+    padding: 1.25rem 5%;
+    background-color: #348E5D;
+    display: flex;
+    align-items: center;
+    column-gap: 1.25rem;
+    color: white;
+}
+
+div.navbar_logo {
+    height: auto;
+    width: auto;
+}
+
+img.navbar_logo {
+    height: 2rem;
+    width: auto;
+}
+
+p.navbar_logo {
+    height: auto;
+    font-size: 1.2rem;
+}
+
+div.navbar_searchbar {
+    height: auto;
+    width: auto;
+}
+
+input.navbar_searchbar {
+    height: 2rem;
+    width: auto;
+    border-radius: 0.9rem;
+    text-indent: 1rem;
+    color: black;
+    font-size: 1rem;
+}
+
+/* ::before  */
+/* input.navbar_searchbar::placeholder::before {
+    content: url("../../images/icons/search.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    text-indent: 10px;
+    height: 10px;
+    width: 10px;
+} */
+
+input.navbar_searchbar:focus {
+    outline: none;
+}
+
+img.navbar_searchbar {
+    height: 1rem;
+    width: 1rem;
+}
+
+div.navbar_profile {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 0.25rem;    
+}
+
+img.navbar_profile {
+    height: 2rem;
+    width: 2rem;
+    background-color: white;
+    border-radius: 100px;
+    padding: 1px;
+}
+
+p.navbar_profile {
+    height: auto;
+    width: auto;
+    font-size: 1.5rem;
+}

@@ -1,0 +1,34 @@
+.contain_main {
+    height: auto;
+    width: 100%;
+    display: grid;
+    margin-top: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: white;
+}
+
+ul.sidebar {
+    justify-self: center;
+    height: auto;
+    width: auto;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: #71a684;
+}
+
+ul.sidebar > li {
+    height: auto;
+    width: auto;
+    display: flex;
+    column-gap: 0.6rem;
+    align-items: center;
+}
+
+ul.sidebar > li > img {
+    height: 1.8rem;
+    width: 1.8rem;
+}
+
+ul.sidebar > li > p {
+    font-size: 1.5rem;
+}

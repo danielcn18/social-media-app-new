@@ -1,28 +1,31 @@
 "use client"
 
+import Image from "next/image";
+import styles from "./navbar.module.css";
+// import company_logo from "@/images/logos/envisionGecko";
+// import search_icon from "@/images/icons/search.png";
+import search_icon from "@/images/icons/search.png";
+import default_profile_icon from "@/images/icons/default_profile_icon.png";
+
+// import user_profile_icon from "";
+
 const Page = () => {
 
     return (
-        <>
-            <h3>Navbar</h3>
-            {/* <div className="container w-full h-25 flex bg-blue">
-                <p>child node</p>
-            </div> */}
-            <section className="text-gray-600 body-font">
-                <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
-                    <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0" />
-                    <div className="lg:flex-grow md:w-1/2 lg:pl-24 md:pl-16 flex flex-col md:items-start md:text-left items-center text-center">
-                    <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Before they sold out
-                        <br className="hidden lg:inline-block" />readymade gluten
-                    </h1>
-                    <p className="mb-8 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</p>
-                    <div className="flex justify-center">
-                        <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
-                        <button className="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Button</button>
-                    </div>
-                    </div>
+        <> 
+            <div className={styles.navbar_main}>
+                <div className={styles.navbar_logo}>
+                    {/* <img className={styles.navbar_logo} src={company_logo} /> */}
+                    <p className={styles.navbar_logo}>Logo</p>
                 </div>
-            </section>
+                <div className={styles.navbar_searchbar}>
+                    <input type="text" placeholder="Search" className={styles.navbar_searchbar} />
+                </div>
+                <div className={styles.navbar_profile}>
+                    <Image className={styles.navbar_profile} src={default_profile_icon} alt="search_icon" />
+                    <p className={styles.navbar_profile}>Profile</p>
+                </div>
+            </div>
         </>
     );
 }
