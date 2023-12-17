@@ -5,8 +5,16 @@
 "use client"
 
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./page.module.css";
-import default_profile_icon from "@/images/icons/default_profile_icon.png"
+import default_profile_icon from "@/images/icons/default_profile_icon.png";
+import { AiFillHome } from "react-icons/ai";
+import { MdExplore } from "react-icons/md";
+import { HiFilm } from "react-icons/hi2";
+import { BiSolidMessage } from "react-icons/bi";
+import { IoNotifications } from "react-icons/io5";
+import { FaPlusCircle } from "react-icons/fa";
+import { FaBookmark } from "react-icons/fa";
 
 // Initializing Page function
 const Page = () => {
@@ -16,32 +24,46 @@ const Page = () => {
             <div className={styles.contain_main}>
                 <ul className={styles.sidebar}>
                     <li>
-                        <Image className={styles.sidebar} src={default_profile_icon} /> 
-                        <p>Home</p>
+                        <Link href="/">
+                            <AiFillHome className={styles.sidebar_icon} />
+                            <p>Home</p>
+                        </Link>
                     </li>
                     <li>
-                        <Image className={styles.sidebar} src={default_profile_icon} /> 
-                        <p>Explore</p>
+                        <Link href="/">
+                            <MdExplore className={styles.sidebar_icon} />
+                            <p>Explore</p>
+                        </Link>
                     </li>
                     <li>
-                        <Image className={styles.sidebar} src={default_profile_icon} /> 
-                        <p>Reels</p>
+                        <Link href="/">
+                            <HiFilm className={styles.sidebar_icon} />
+                            <p>Shorts</p>
+                        </Link>
                     </li>
                     <li>
-                        <Image className={styles.sidebar} src={default_profile_icon} /> 
-                        <p>Messages</p>
+                        <Link href="/">
+                            <BiSolidMessage className={styles.sidebar_icon} />
+                            <p>Messages</p>
+                        </Link>
                     </li>
                     <li>
-                        <Image className={styles.sidebar} src={default_profile_icon} /> 
-                        <p>Notifications</p>
+                        <Link href="/">
+                            <IoNotifications className={styles.sidebar_icon} />
+                            <p>Notifications</p>
+                        </Link>
                     </li>
                     <li>
-                        <Image className={styles.sidebar} src={default_profile_icon} /> 
-                        <p>Create</p>
+                        <Link href="/">
+                            <FaPlusCircle className={styles.sidebar_icon} />
+                            <p>Create</p>
+                        </Link>
                     </li>
                     <li>
-                        <Image className={styles.sidebar} src={default_profile_icon} /> 
-                        <p>More</p>
+                        <Link href="/">
+                            <FaBookmark className={styles.sidebar_icon} />
+                            <p>Saved</p>
+                        </Link>
                     </li>
                 </ul>
                 <div>

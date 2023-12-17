@@ -1,8 +1,9 @@
 "use client"
 
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./navbar.module.css";
-// import company_logo from "@/images/logos/envisionGecko";
+import company_logo from "@/images/logos/gecko_logo.png";
 // import search_icon from "@/images/icons/search.png";
 import search_icon from "@/images/icons/search.png";
 import default_profile_icon from "@/images/icons/default_profile_icon.png";
@@ -11,12 +12,18 @@ import default_profile_icon from "@/images/icons/default_profile_icon.png";
 
 const Page = () => {
 
+    // slogan: Tailored Connections, Tailored for You – That's Gecko!
     return (
         <> 
             <div className={styles.navbar_main}>
                 <div className={styles.navbar_logo}>
-                    {/* <img className={styles.navbar_logo} src={company_logo} /> */}
-                    <p className={styles.navbar_logo}>Logo</p>
+                    <Link href="/">
+                        <Image 
+                            src={company_logo}
+                            alt="company_logo"
+                            className={styles.navbar_logo}
+                        />
+                    </Link>
                 </div>
                 <div className={styles.navbar_searchbar}>
                     <input type="text" placeholder="Search" className={styles.navbar_searchbar} />

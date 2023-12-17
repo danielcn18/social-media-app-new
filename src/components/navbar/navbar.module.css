@@ -1,6 +1,6 @@
 .navbar_main {
     width: 100%;
-    min-height: 3.25rem;
+    min-height: 3.15rem;
     height: auto;
     padding: 1.25rem 5%;
     background-color: #348E5D;
@@ -16,8 +16,8 @@ div.navbar_logo {
 }
 
 img.navbar_logo {
-    height: 2rem;
-    width: auto;
+    height: 3rem;
+    width: 4rem;
 }
 
 p.navbar_logo {
@@ -31,8 +31,8 @@ div.navbar_searchbar {
 }
 
 input.navbar_searchbar {
-    height: 2rem;
-    width: auto;
+    height: 2.5rem;
+    width: 15rem;
     border-radius: 0.9rem;
     text-indent: 1rem;
     color: black;
@@ -68,8 +68,8 @@ div.navbar_profile {
 }
 
 img.navbar_profile {
-    height: 2rem;
-    width: 2rem;
+    height: 2.5rem;
+    width: 2.5rem;
     background-color: transparent;
     border-radius: 100px;
 }
@@ -77,5 +77,5 @@ img.navbar_profile {
 p.navbar_profile {
     height: auto;
     width: auto;
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }

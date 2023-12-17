@@ -10,26 +10,29 @@
 ul.sidebar {
     justify-self: center;
     height: auto;
-    min-width: 18rem;
+    min-width: 17rem;
     padding: 1rem;
     border-radius: 0.5rem;
     background-color: #71a684;
 }
 
-ul.sidebar > li {
+ul.sidebar > li > a {
     height: auto;
     width: auto;
     display: flex;
-    column-gap: 0.6rem;
-    row-gap: 1rem;
+    column-gap: 0.4rem;
     align-items: center;
 }
 
-ul.sidebar > li > img {
-    height: 1.8rem;
-    width: 1.8rem;
+.sidebar_icon {
+    height: 1.6rem;
+    width: 1.6rem;
+    font-size: 0.6rem;
+    color: white;
 }
 
-ul.sidebar > li > p {
-    font-size: 1.5rem;
+ul.sidebar > li > a > p {
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin: 0.5rem 0;
 }
