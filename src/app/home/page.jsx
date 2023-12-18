@@ -22,55 +22,76 @@ const Page = () => {
     return (
         <>
             <div className={styles.contain_main}>
-                <ul className={styles.sidebar}>
+                <ul className={styles.sidebar_left}>
                     <li>
                         <Link href="/">
-                            <AiFillHome className={styles.sidebar_icon} />
+                            <AiFillHome className={styles.sidebar_left_icon} />
                             <p>Home</p>
                         </Link>
                     </li>
                     <li>
                         <Link href="/">
-                            <MdExplore className={styles.sidebar_icon} />
+                            <MdExplore className={styles.sidebar_left_icon} />
                             <p>Explore</p>
                         </Link>
                     </li>
                     <li>
                         <Link href="/">
-                            <HiFilm className={styles.sidebar_icon} />
+                            <HiFilm className={styles.sidebar_left_icon} />
                             <p>Shorts</p>
                         </Link>
                     </li>
                     <li>
                         <Link href="/">
-                            <BiSolidMessage className={styles.sidebar_icon} />
+                            <BiSolidMessage className={styles.sidebar_left_icon} />
                             <p>Messages</p>
                         </Link>
                     </li>
                     <li>
                         <Link href="/">
-                            <IoNotifications className={styles.sidebar_icon} />
+                            <IoNotifications className={styles.sidebar_left_icon} />
                             <p>Notifications</p>
                         </Link>
                     </li>
                     <li>
                         <Link href="/">
-                            <FaPlusCircle className={styles.sidebar_icon} />
+                            <FaPlusCircle className={styles.sidebar_left_icon} />
                             <p>Create</p>
                         </Link>
                     </li>
                     <li>
                         <Link href="/">
-                            <FaBookmark className={styles.sidebar_icon} />
+                            <FaBookmark className={styles.sidebar_left_icon} />
                             <p>Saved</p>
                         </Link>
                     </li>
                 </ul>
-                <div>
-
+                <div className={styles.posts_display_main}>
+                    <div className={styles.posts_display}>
+                        
+                    </div>
                 </div>
-                <div>
-
+                <div className={styles.sidebar_right}>
+                    <div className={styles.friend_request_main}>
+                        <div className={styles.friend_request}>
+                            <div className={styles.friend_request_header}>
+                                <p>Friend Request</p>
+                                <Link href="/">
+                                    <p>See all</p>
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
+                    <div className={styles.friend_suggestion_main}>
+                        <div className={styles.friend_suggestion}>
+                            <div className={styles.friend_suggestion_header}>
+                                <p>Friend Request</p>
+                                <Link href="/">
+                                    <p>See all</p>
+                                </Link>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </>

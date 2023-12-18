@@ -1,22 +1,22 @@
 .contain_main {
     height: auto;
-    width: 100%;
+    width: calc(100% - 4rem);
     display: grid;
-    margin-top: 2rem;
+    margin: 2rem 2rem 0 2rem ;
     grid-template-columns: 1fr 1fr 1fr;
     color: white;
 }
 
-ul.sidebar {
+ul.sidebar_left {
     justify-self: center;
-    height: auto;
-    min-width: 17rem;
+    height: min-content;
+    min-width: 16rem;
     padding: 1rem;
     border-radius: 0.5rem;
     background-color: #71a684;
 }
 
-ul.sidebar > li > a {
+ul.sidebar_left > li > a {
     height: auto;
     width: auto;
     display: flex;
@@ -24,15 +24,86 @@ ul.sidebar > li > a {
     align-items: center;
 }
 
-.sidebar_icon {
+.sidebar_left_icon {
     height: 1.6rem;
     width: 1.6rem;
     font-size: 0.6rem;
     color: white;
 }
 
-ul.sidebar > li > a > p {
+ul.sidebar_left > li > a > p {
     font-size: 1.6rem;
     font-weight: 500;
     margin: 0.5rem 0;
+}
+
+div.posts_display_main {
+    display: flex;
+    justify-content: center;
+}
+
+div.posts_display {
+    min-height: 40rem;
+    height: auto;
+    width: 26rem;
+    border: 0px solid black;
+    border-radius: 0.75rem;
+    background-color: white;
+}
+
+div.sidebar_right {
+    height: min-content;
+    width: auto;
+    display: grid;
+    justify-content: center;
+    row-gap: 1rem;
+    color: black;
+}
+
+div.friend_suggestion_main, 
+div.friend_request_main {
+    height: min-content;
+    min-height: 2rem;
+    width: 17rem;
+    background-color: white;
+    border-radius: 0.5rem;
+}
+
+div.friend_suggestion, 
+div.friend_request {
+    height: calc(max-content - 0.75rem);
+    width: calc(max-content - 0.5rem);
+    margin: 0.75rem 0.5rem;
+    background-color: rgb(255, 255, 255);
+    height: 5rem;    
+}
+
+div.friend_request_header, 
+div.friend_suggestion_header  {
+    height: min-content;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.friend_request_header > a > p, 
+div.friend_suggestion_header > a > p {
+    color: dodgerblue;
+}
+
+div.friend_request_header > p,
+div.friend_suggestion_header > p {
+    color: black;
+}
+
+div.friend_request_header > a > p, 
+div.friend_suggestion_header > a > p,
+div.friend_request_header > p,
+div.friend_suggestion_header > p {
+    font-size: 1rem;
+}
+
+div.friend_request_header,
+div.friend_suggestion_header {
+    border-bottom: 1px solid;
 }
